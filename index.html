@@ -21,6 +21,11 @@
   </noscript>
 
   <style type="text/css">
+    .colorhead{
+      background: linear-gradient(to right,yellow,green);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    }
     @media only screen and (max-width: 800px){
       .row.rulesSection{
         display: contents;
@@ -28,7 +33,7 @@
 
       .row.rulesSection > .col-6{
         max-width: 100%;
-        border-bottom: 5px solid white;
+        border: 10px solid white;
         padding: 45px !important;
       }
 
@@ -44,7 +49,14 @@
         text-align: center;
       }
 
+      .row.countSection > .col-4{
+        max-width: 100%;
+        border: 10px solid white;
+        padding: 45px !important;
+      }
+
     }
+    
   </style>
 
 </head>
@@ -53,7 +65,7 @@
     <div class="profile-page sidebar-collapse">
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
         <div class="container">
-          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">WITHackathon</a>
+          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip" style="text-decoration: none;"><img src="./images/wit.png" style="height: 30px;width: 30px; border-radius: 50%;" alt="Image"/>&nbsp;&nbsp;WITHackathon</a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
@@ -76,13 +88,21 @@
       <div class="profile-page">
         <div class="wrapper">
           <div class="page-header page-header-small" filter-color="green">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('images/background.jpg')"></div>
+            <div class="background">
+               <div class="cube"></div>
+               <div class="cube"></div>
+               <div class="cube"></div>
+               <div class="cube"></div>
+              <div class="cube"></div>
+           
             <div class="container">
               <div class="content-center">
-                <div class="h2 title">WITHackathon-21</div>
+                <div class="cc-profile-image"><a href="#"><img src="./images/wit.png" alt="Image"/>
+                <div class="h2 title colorhead">WITHackathon-21</div></a></div>
                 <b>(Software Edition)</b><br><br><p class="category text-white">Hosted By,<br> Walchand Institute Of Technology,Solapur</p>
               </div>
             </div>
+             </div>
           </div>
         </div>
       </div>
@@ -96,7 +116,7 @@
           <div class="card" data-aos="fade-up" data-aos-offset="10">
 
             <div class="card-body">      
-              WIT, Solapur is launching its first National Online Hackathon to bring various enthusiastic Programmers and Designers to participate and showcase their talent in resolving complex engineering design challenges.
+              Walchand Institute Of Technology, Solapur is launching its first National Online Hackathon to bring various enthusiastic Programmers and Designers to participate and showcase their talent in resolving complex engineering design challenges.
               <br><br>
               <b>Before REGISTRATION, to have a quick glimpse of the entire Hackathon event flow, <a href="#">click here</a></b>
             </div>
@@ -105,6 +125,23 @@
         </div>
       </div>
 
+
+      <div class="section">
+        <br><br>
+        <div class="container">
+          <div class="h4 text-center mb-4 title"style="color: #4B95D6;">Rounds</div>
+          <div class="row rulesSection">
+            <div class="col-6" data-aos="zoom-in" style="background-color: #4B95D6;padding: 5%;color: white;border-right: 5px solid white;text-align: center;" > 
+              <b>Round-I <br> Idea Representation</b> <br> 12th & 13th June <br> 10 a.m. onwards
+            </div>
+            <div class="col-6"  data-aos="zoom-in"  style="background-color: #4B95D6;padding: 5%;color: white;border-right: 5px solid white;text-align: center;" >
+              <b>Round-II <br> Non-Stop Coding Competetion</b> <br> 26th & 27th June <br> 09 a.m. onwards
+            </div>
+
+          </div>
+
+        </div>
+      </div>
 
       <div class="section" id="rules">
         <br><br>
@@ -159,20 +196,27 @@
       <div class="section">
         <br><br>
         <div class="container">
-          <div class="h4 text-center mb-4 title"style="color: #4B95D6;">Rounds</div>
-          <div class="row rulesSection">
-            <div class="col-6" data-aos="zoom-in" style="background-color: #4B95D6;padding: 5%;color: white;font-weight: bold;border-right: 5px solid white;text-align: center;" > 
-              Round -I <br> Idea Representation <br> 12 th &amp; 13 th June 2021
-
+          <div class="h4 text-center mb-4 title"style="color: #4B95D6;">Total Registrations Till Now!</div>
+          <div class="row countSection" style="font-size: 15px; letter-spacing: 2px;">
+            <div class="col-4"  data-aos="zoom-in"  style="background-color: #4B95D6;padding: 5%;color: white;font-weight: bold;border-right: 5px solid white;text-align: center;"> 
+              Problem Statement I <br><br>
+              <p id="p1" style="font-size: 25px"> 0 </p>
             </div>
-            <div class="col-6" data-aos="zoom-in"  style="background-color: #4B95D6;padding: 5%;color: white;font-weight: bold;border-right: 5px solid white;text-align: center;" >
-              Round -II <br> Non-Stop Coding Competetion <br> 26 th &amp; 27 th June 2021
+            <div class="col-4" data-aos="zoom-in"  style="background-color: #4B95D6;padding: 5%;color: white;font-weight: bold;border-right: 5px solid white;text-align: center;" >
+
+              Problem Statement II <br><br>
+              <p id="p2" style="font-size: 25px"> 0 </p>
+            </div>
+
+            <div class="col-4"  data-aos="zoom-in"  style="background-color: #4B95D6;padding: 5%;color: white;font-weight: bold;border-right: 5px solid white;text-align: center;" >
+              Problem Statement III <br><br>
+              <p id="p3" style="font-size: 25px"> 0 </p>
             </div>
 
           </div>
 
         </div>
-      </div>
+      </div>      
 
 
       <div class="section" id="problem">
@@ -296,16 +340,16 @@
                       The participating team must pay Rs. 200 towards Principal, Walchand Institute of Technology, Solapur and save UTR/reference number along with a screenshot which is to be submitted at the time of registration.
                       <br><br>
 
-<div style="text-align: left;display: inline-block;">
-<center><h5>Details for Online Payment</h5></center><br>
+                    <div style="text-align: left;display: inline-block;">
+                    <center><h5>Details for Online Payment</h5></center><br>
 
-<b>Band Account Name</b>: Principal, Walchand Institute of Technology, Solapur<br>
-<b>Bank Name</b>: State Bank of India<br>
-<b>Bank Address</b>: Balives Branch, Solapur<br>
-<b>Savings Account No.</b>: 11087724250<br>
-<b>IFSC code</b>: SBIN0000483<br>
-<b>MICR code</b>: 413002002
-</div>
+                    <b>Band Account Name</b>: Principal, Walchand Institute of Technology, Solapur<br>
+                    <b>Bank Name</b>: State Bank of India<br>
+                    <b>Bank Address</b>: Balives Branch, Solapur<br>
+                    <b>Savings Account No.</b>: 11087724250<br>
+                    <b>IFSC code</b>: SBIN0000483<br>
+                    <b>MICR code</b>: 413002002
+                    </div>
                     </div>
 
                   </div>
@@ -332,12 +376,18 @@
 
                         Registration <b>Fees Rs. 200/- </b> per Team<br><br>
                       </p>
-                      <a href="#" class="btn btn-primary" style="letter-spacing: 2px;"><b>Register</b></a>  
+                      <a target="_blank" href="https://forms.gle/1P4XYXLeW7UrBg2E6" class="btn btn-primary" style="letter-spacing: 2px;"><b>Register</b></a>  
+                      <br><br>
+                      
+                      <b><p>📢 First make sure you download the .pptx template and be ready with it before your register.</p>
+                      <a href="#">Download PPT Template</a></b>
+
                     </div>
                   </div>
 
                 </center>
               </div>
+
 
             </div>
           </div>
@@ -388,7 +438,7 @@
 
   <div class="text-center text-muted">
     <p>&copy; Copyrigts. All rights reserved. | Walchand Institute Of Technology ,Solapur</p>
-    <p style="color: white;">Designed &amp; Developed By <br>Omsai Kalekar &amp; Venu Bura. </p>
+    <p style="color: white;">Designed &amp; Developed By <br> Omsai Kalekar , Venu Bura &amp; Ishita Jain. </p>
 
   </div>
 </footer>
@@ -402,6 +452,154 @@
   .iconStyle:hover{
     color: white;
   }
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.getJSON("https://spreadsheets.google.com/feeds/cells/1xFv6yFp_wCj4ZsW1GhA4pzxVNtsE_phq_SboaQO57Tk/1/public/full?alt=json",function( data){
+      var len=data.feed.entry.length;
+      
+      var i=0;
+      var pb1=0,pb2=0,pb3=0;
+      for(i=27;i<len;i+=1){
+        if(data.feed.entry[i].gs$cell.inputValue=="Problem Statement No 1 : An Online System for Mentoring Students of Education Institute.")
+        {
+          pb1++;
+        }
+        if(data.feed.entry[i].gs$cell.inputValue=="Problem Statement No 2 : Exam Monitoring System")
+        {
+          pb2++;
+        }
+        if(data.feed.entry[i].gs$cell.inputValue=="Problem Statement No 3 : Dashboard For T&P Activities")
+        {
+          pb3++;
+        }
+        
+      }
+      
+      $("#p1").html(pb1);
+      $("#p2").html(pb2);
+      $("#p3").html(pb3);
+
+      $('#p1').each(function () {
+        $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+
+
+      $('#p2').each(function () {
+        $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+
+      $('#p3').each(function () {
+        $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    
+    });
+
+  });
+
+</script>
+
+<style type="text/css">
+.background {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 5s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 1s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 2s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 3s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 4s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 5s;
+  left: 50vw;
+  top: 10vh;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
 </style>
 </body>
 </html>

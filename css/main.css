@@ -3417,9 +3417,10 @@ Created using IcoMoon - icomoon.io
   overflow: hidden;
   width: 100%;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); }
+ }
   .card .card-body {
-    padding: 4%; }
+    padding: 4%;
+    background-color: #f1f1f1; }
   .card[data-background-color="orange"] {
     background-color: #4B95D6; }
   .card[data-background-color="red"] {
@@ -3748,7 +3749,7 @@ Created using IcoMoon - icomoon.io
 
 .section {
   position: relative;
-  background: #FFFFFF; }
+    }
   .section .row + .category {
     margin-top: 15px; }
 
